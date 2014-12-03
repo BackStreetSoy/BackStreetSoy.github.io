@@ -1,0 +1,41 @@
+img
+{max-width: 60%;
+display: block;
+margin-left: auto;
+margin-right: auto;}
+
+h1
+{font-family: monospace;
+}
+
+h2
+{ font-family: monospace;
+}
+
+#BlogTableTitle{
+  font-family: monospace;
+}
+
+div
+{postion: absolute;
+top: 0;}
+
+section
+{ float: left;}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+
+  li {
+    list-style-type: none;
+  }
+
+
+
+
