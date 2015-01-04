@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>The Tao of The Keyboard</title>
+  <link rel="stylesheet" type="text/css" href="blog_template_stylesheet.css">
+</head>
+
+<body>
+
+<div><a href="index.html"><img src ="https://scontent-a-ord.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10645046_10155047930345179_639720797855290420_n.jpg?oh=d844514f11a65d2e114a0dc2190af7cf&oe=54FF4295"><a></div>
+
+  <h1>Class is Now in Session, and I hate that I Just Made That Joke</h1>
+  <h2>No really, I'd like to think I could have done better than that</h2>
+  <h4>January 3rd, 2015</h4>
+
+    <p>
+<code> class Movie 
+  def initialize(movie_title)
+  @movie_title = movie_title
+  puts "Yo I can't believe you picked #{@movie_title}, word. What else do you have to say?"
+  answer = gets.chomp 
+    if answer 
+       movie_sucks
+    end 
+  end 
+
+  def movie_sucks
+    puts "Yeah? Well, #{@movie_title} sucks!"
+  end 
+end 
+
+
+gravity=Movie.new("Gravity")
+</code>
+    </p>
+    <p>
+     Above is a class called 'Movie' that takes whatever movie you pass into it, and tells you that it sucks. Why does it do this? Because I like the idea of a computer poo-poing a person's subjective taste. And I'm a bit of a techno-masochist and I want to get yelled at by a computer, while I get to laugh at it an be like, “oh computer.. you don't even know how to love, how can you tell me that any movie 'sucks'?” Let's take a look at what this class is doing. 
+    </p>
+    <p>
+First I set an initialize method. This is going to feel a little condescending but I'm going to say it regardless, initialize methods are methods that your class will <em>initially</em> run. Typically your initialize method will set up some initial instance variables. Instance variables are kind of like your average variable except that they start with an @ sign and are visible only to the instance of a class. In this example I wanted to keep it simple so I only used one instance variable @movie_title, and if you look at the code you'll notice the same method is able to be used in both the initialize and the movie_sucks methods. Instance methods don't know if they are being used for nefarious means so feel free to use your powers for evil like I did. It was fun. 
+    </p>
+    <p>
+Another fun thing I did here was call a method <em>within</em> a method. At the very end of the initialize method I have it call the movie_sucks method, what does this mean? The implication here is that methods can be called within classes as well as outside of classes, it also means that the Movie class is set to, no matter what, tell you that the movie you pass through as an argument in fact, sucks. This code had a rough up bringing. 
+   </p>
+</body>
+
+</html>
